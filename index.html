@@ -30,12 +30,14 @@
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
             max-width: 400px;
             width: 100%;
+            margin-top: 50px; /* Desce um pouco os links */
         }
 
         h1 {
             color: #000000;
             font-size: 24px;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efeito 3D no texto */
         }
 
         ul {
@@ -59,17 +61,18 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(255, 255, 255, 0.1); /* Efeito 3D nas bordas */
-            transition: transform 0.3s;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(255, 255, 255, 0.1); /* Efeito 3D nos botões */
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         a:hover {
             transform: translateY(-2px); /* Elevação ao passar o mouse */
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(255, 255, 255, 0.1); /* Intensificação do efeito 3D ao passar o mouse */
         }
 
         .fa-whatsapp {
             margin-right: 10px;
-            color: #25D366; /* Cor verde padrão do WhatsApp */
+            color: #ffffff; /* Cor branca para o ícone do WhatsApp */
         }
 
         /* Media Queries para dispositivos móveis */
