@@ -18,11 +18,17 @@
             background-repeat: no-repeat;
             color: #ffffff;
             display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
             text-align: center;
         }
-
+        .logo {
+            max-width: 300px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
         .container {
             background: rgba(255, 255, 255, 0.9);
             padding: 30px;
@@ -30,26 +36,21 @@
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
             max-width: 400px;
             width: 100%;
-            margin-bottom: 50px;
         }
-
         h1 {
             color: #000000;
             font-size: 24px;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
-
         li {
             margin-bottom: 15px;
         }
-
         a {
             text-decoration: none;
             color: #ffffff;
@@ -65,19 +66,30 @@
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(255, 255, 255, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
-
         a:hover {
             transform: translateY(-2px);
             box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(255, 255, 255, 0.1);
         }
-
         .fa-whatsapp {
             margin-right: 10px;
             color: #ffffff !important;
         }
+        @media (max-width: 768px) {
+            html, body {
+                background-image: url('https://raw.githubusercontent.com/EletricaEstrela/whatsapp-links/main/BackgroundMobile.png');
+            }
+            .logo {
+                max-width: 250px;
+                margin-top: 30px;
+            }
+            .container {
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
+    <img src="https://raw.githubusercontent.com/EletricaEstrela/whatsapp-links/main/logo.png" alt="Elétrica Estrela" class="logo">
     <div class="container">
         <h1>Entre em contato pelo WhatsApp</h1>
         <ul>
