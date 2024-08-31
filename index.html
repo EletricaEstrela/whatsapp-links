@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos via WhatsApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Cor de fundo preto */
+            background-image: url('https://github.com/SeuUsuario/SeuRepositorio/raw/main/Background.png'); /* Imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff; /* Texto branco */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000; /* Texto preto */
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #ff0000; /* Fundo vermelho */
+            padding: 15px;
+            border-radius: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(255, 255, 255, 0.1); /* Efeito 3D nas bordas */
+            transition: transform 0.3s;
+        }
+
+        a:hover {
+            transform: translateY(-2px); /* Elevação ao passar o mouse */
+        }
+
+        .fa-whatsapp {
+            margin-right: 10px;
+            color: #25D366; /* Cor verde padrão do WhatsApp */
+        }
+
+        /* Media Queries para dispositivos móveis */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            a {
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entre em Contato pelo WhatsApp</h1>
+        <ul>
+            <li><a href="https://wa.me/5561984112290?text=Elétrica,%20Estrela%20Águas%20Claras%20A"><i class="fab fa-whatsapp"></i> Águas Claras</a></li>
+            <li><a href="https://wa.me/5561984041536?text=Elétrica,%20Estrela%20Ceilândia%20B"><i class="fab fa-whatsapp"></i> Ceilândia</a></li>
+            <li><a href="https://wa.me/5561984040305?text=Elétrica,%20Estrela%20Recanto%20Bdas%20BEmas"><i class="fab fa-whatsapp"></i> Recanto das Emas</a></li>
+        </ul>
+    </div>
+</body>
+</html>
