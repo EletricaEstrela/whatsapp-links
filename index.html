@@ -11,16 +11,18 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #000000;
-            background-image: url('https://raw.githubusercontent.com/EletricaEstrela/whatsapp-links/main/Background.png');
-            background-size: cover; /* Garante que a imagem cubra toda a área */
-            background-position: center; /* Centraliza a imagem */
-            background-repeat: no-repeat; /* Impede a repetição da imagem */
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: flex-end; /* Alinhado para o fundo */
             text-align: center;
+        }
+        body {
+            background-color: #000000; /* Fundo padrão */
+            background-image: url('https://raw.githubusercontent.com/EletricaEstrela/whatsapp-links/main/Background.png');
+            background-size: cover; /* Garante que a imagem cubra toda a área */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Impede a repetição da imagem */
         }
         .container {
             background: transparent; /* Torna o fundo do container transparente */
@@ -34,7 +36,6 @@
             overflow: hidden; /* Garante que não haja overflow */
         }
         h1 {
-            color: #ffffff;
             font-size: 24px;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -71,8 +72,8 @@
             color: #ffffff !important;
         }
         @media (max-width: 768px) {
-            html, body {
-                background-image: url('https://raw.githubusercontent.com/EletricaEstrela/whatsapp-links/main/BackgroundMobile.png');
+            body {
+                background-image: url('https://raw.githubusercontent.com/EletricaEstrela/whatsapp-links/main/BackgroundMobile.png'); /* Imagem de fundo para mobile */
                 justify-content: flex-start;
                 align-items: center;
             }
