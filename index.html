@@ -11,12 +11,12 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #000000; /* Cor de fundo preto */
+            background-color: #000000;
             background-image: url('https://github.com/EletricaEstrela/whatsapp-links/raw/main/Background.png'); /* Imagem de fundo */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            color: #ffffff; /* Texto branco */
+            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,7 +30,7 @@
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
             max-width: 400px;
             width: 100%;
-            margin-top: 50px; /* Desce um pouco os links */
+            margin-top: 50px; /* Desce os links */
         }
 
         h1 {
@@ -72,23 +72,30 @@
 
         .fa-whatsapp {
             margin-right: 10px;
-            color: #ffffff; /* Cor branca para o ícone do WhatsApp */
+            color: #ffffff !important; /* Cor branca para o ícone do WhatsApp */
         }
 
         /* Media Queries para dispositivos móveis */
         @media (max-width: 768px) {
+            html, body {
+                background-image: url('https://github.com/EletricaEstrela/whatsapp-links/raw/main/Background.png'); /* Certifica-se que a imagem é correta em dispositivos móveis */
+            }
+
             .container {
                 padding: 20px;
                 max-width: 100%;
+                margin-top: 30px; /* Ajusta a margem para dispositivos móveis */
             }
 
             h1 {
                 font-size: 20px;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Efeito 3D ajustado */
             }
 
             a {
                 font-size: 16px;
                 padding: 12px;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.1); /* Ajuste do efeito 3D nos botões */
             }
         }
     </style>
@@ -97,9 +104,9 @@
     <div class="container">
         <h1>Entre em Contato pelo WhatsApp</h1>
         <ul>
-            <li><a href="https://wa.me/5561984112290?text=Elétrica,%20Estrela%20Águas%20Claras%20A"><i class="fab fa-whatsapp"></i> Águas Claras</a></li>
-            <li><a href="https://wa.me/5561984041536?text=Elétrica,%20Estrela%20Ceilândia%20B"><i class="fab fa-whatsapp"></i> Ceilândia</a></li>
-            <li><a href="https://wa.me/5561984040305?text=Elétrica,%20Estrela%20Recanto%20Bdas%20BEmas"><i class="fab fa-whatsapp"></i> Recanto das Emas</a></li>
+            <li><a href="https://wa.me/5561984112290?text=Elétrica,%20Estrela%20Águas%20Claras%20A"><i class="fab fa-whatsapp"></i> Loja Águas Claras</a></li>
+            <li><a href="https://wa.me/5561984041536?text=Elétrica,%20Estrela%20Ceilândia%20B"><i class="fab fa-whatsapp"></i> Loja Ceilândia</a></li>
+            <li><a href="https://wa.me/5561984040305?text=Elétrica,%20Estrela%20Recanto%20Bdas%20BEmas"><i class="fab fa-whatsapp"></i> Loja Recanto das Emas</a></li>
         </ul>
     </div>
 </body>
